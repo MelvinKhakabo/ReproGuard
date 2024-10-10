@@ -1,25 +1,36 @@
-reproguard/
+
+reproguard-web/
+│
 ├── backend/
-│   ├── reproguard/
-│   │   ├── __init__.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   ├── wsgi.py
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── views.py
-│   │   ├── urls.py
-│   │   ├── serializers.py
-│   ├── manage.py
+│   ├── __init__.py
+│   ├── app.py
+│   ├── config.py
+│   ├── models.py
+│   ├── routes.py
+│   └── requirements.txt
+│
 ├── frontend/
 │   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js
-│   │   ├── index.js
-│   ├── package.json
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   │
+│   └── src/
+│       ├── components/
+│       │   ├── Header.js
+│       │   ├── Footer.js
+│       │   └── ResourceCard.js
+│       │
+│       ├── pages/
+│       │   ├── Home.js
+│       │   ├── Resources.js
+│       │   ├── DiagnosticTool.js
+│       │   └── Forum.js
+│       │
+│       ├── services/
+│       │   └── api.js
+│       │
+│       ├── App.js
+│       └── index.js
+│
 ├── README.md
-├── requirements.txt
-└── db.sqlite3
+└── .gitignore
