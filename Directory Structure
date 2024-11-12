@@ -1,4 +1,3 @@
-
 reproguard-web/
 │
 ├── backend/
@@ -7,7 +6,10 @@ reproguard-web/
 │   ├── config.py
 │   ├── models.py
 │   ├── routes.py
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── tests/                  # Optional: Directory for backend tests
+│       ├── __init__.py
+│       └── test_app.py        # Example test file
 │
 ├── frontend/
 │   ├── public/
@@ -27,10 +29,10 @@ reproguard-web/
 │       │   └── Forum.js
 │       │
 │       ├── services/
-│       │   └── api.js
+│       │   └── api.js         # Handles API calls to the backend
 │       │
-│       ├── App.js
-│       └── index.js
+│       ├── App.js             # Main application component
+│       └── index.js           # Entry point for React application
 │
-├── README.md
-└── .gitignore
+├── README.md                  # Documentation for the project
+└── .gitignore                 # Files and directories to ignore by Git
